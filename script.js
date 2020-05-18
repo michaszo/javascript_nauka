@@ -24,4 +24,16 @@ function count_to_x_and_then_to_zero(x) {
 
 }
 
-count_to_x_and_then_to_zero(2);
+function count_to_x(x) {
+    let i = 0;
+
+    setInterval(() => {
+        console.log(++i);
+        if (i >= x) {
+            i = 0;
+        }
+    }, 1000);
+}
+
+// count_to_x_and_then_to_zero(10);
+count_to_x(2);
