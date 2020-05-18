@@ -36,4 +36,4 @@ function count_to_x(x) {
 }
 
 // count_to_x_and_then_to_zero(10);
-count_to_x(2);
+count_to_x(10);
