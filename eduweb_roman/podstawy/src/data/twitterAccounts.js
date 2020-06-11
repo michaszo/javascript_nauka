@@ -20,7 +20,6 @@ export const twitterAccounts = [
         image: michaelJacksonImage,
         name: 'Michael Jackson',
         description: 'Maker. Co-author of React Router. Working on @ReactTraining. Created @unpkg. Head over heels for @cari.',
-        twitterLink: 'https://twitter.com/mjackson',
     },
     {
         image: kentCDoddsImage,
