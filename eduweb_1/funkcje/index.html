@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (() => {
+            function sum(a, b) {
+                console.log(arguments);
+                return a + b;
+            }
+
+            console.log(sum(1, 2));
+
+
+            const a = [3, 2, 1];
+
+            a.sort((a, b) => {
+                console.log('a=' + a, 'b=' + b);
+                return a - b;
+            });
+            console.log(a);
+        })()
+
+        // a = 2 - '2';
+        // b = isNaN();
+        // console.log(typeof(a));
+
+        f = parseFloat('12.123zł');
+
+        console.log(f);
+    </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     function getRandom(min, max) {
 
         if (min >= max) {
-            return 0;
+            throw new Error('Min can\'t be greather than max');
         }
 
         return Math.round((Math.random() * (max - min) + min));
@@ -18,7 +18,12 @@
 
         while (numbers.length < 6) {
 
-            rand = getRandom(1, 49);
+            try {
+                rand = getRandom(1, 49);
+            } catch (error) {
+                console.dir(error.message);
+                break;
+            }
 
             if (!numbers.includes(rand)) {
                 numbers.push(rand);
